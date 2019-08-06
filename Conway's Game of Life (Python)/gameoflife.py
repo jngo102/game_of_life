@@ -55,11 +55,11 @@ def report_options(opts):
     'Game of Life' simulation.
     """
 
-    print "Conway's Game of Life"
-    print "====================="
-    print "  World Size: %i x %i" % (opts.rows, opts.cols)
-    print "  World Type: %s" % (opts.world_type)
-    print "  Frame Delay: %i (ms)" % (opts.framedelay)
+    print("Conway's Game of Life")
+    print("=====================")
+    print("  World Size: %i x %i" % (opts.rows, opts.cols))
+    print("  World Type: %s" % (opts.world_type))
+    print("  Frame Delay: %i (ms)" % (opts.framedelay))
 
 def generate_world(opts):
     """
@@ -127,7 +127,7 @@ def run_simulation(opts, world):
                  'interval' milliseconds to update the plot image (img).
     """
     if len(world) == 0:
-        print "The 'world' was never created. Exiting"
+        print("The 'world' was never created. Exiting")
         sys.exit()
 
     fig = plt.figure()
